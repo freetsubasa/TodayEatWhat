@@ -80,7 +80,14 @@ int main(int argc, char **argv)
 						}
 				}
 			}
-
+		else if (strcmp(argv[1], "info") == 0)
+			{
+				printf("home => 吃除了學校以外的東西\n");
+				printf("school => 學校裡的東西\n");
+				printf("然後 info 就相關資訊 ._.\n");
+				printf("https://github.com/freetsubasa/TodayEatWhat 求改良（？）\n");
+				break;
+			}
 		printf("小飛機你今天想吃什麼 1、2、3 or ... me ?\n");
 		while(scanf("%d", &ans) == 1)
 		{
