@@ -1,1 +1,4 @@
-chmod +x 檔名 
+
+todayeat info -> 說明
+
+
