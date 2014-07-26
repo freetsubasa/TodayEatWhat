@@ -11,11 +11,16 @@ int main(int argc, char **argv)
 		int food;
 		int ans;
 		srand(time(NULL));
+        
+        if (argc == 1)
+        {
+            printf("please enter \"info\"\n");
+            exit(0);
+        }
 		
 		if (strcmp(argv[1], "school") == 0)
 		{
-			int i = 0;
-			for(i = 0 ; i < 3 ; i++)
+			for(int i = 0 ; i < 3 ; i++)
 			{
 				food = (rand() % 3) +1;
 				switch(food)
@@ -98,7 +103,7 @@ int main(int argc, char **argv)
 			}
 			else
 			{
-				printf("輸入其他數字是想吃掉趴趴子的意思嘛 >////<\n");
+				printf("輸入其他數字是還要在跑一次的意思 \n");
 			}
 		}
 	}
